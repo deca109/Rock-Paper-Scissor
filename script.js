@@ -22,7 +22,7 @@ const winCheck=(p,c)=>{
         msgbox.innerText="It Was A Draw";
         msgbox.style.backgroundColor="#14213d";
     }
-    else if((p=="Rock" && c=="Paper")||(p=="Paper" && c=="Scissor")||(p=="Scissor" && c=="Rock")){
+    else if((p=="Rock" && c=="Scissor")||(p=="Paper" && c=="Rock")||(p=="Scissor" && c=="Paper")){
         playerscore.innerText=parseInt(playerscore.innerText)+1;
         msgbox.innerText=`You Won! ${p} beats ${c}`;
         msgbox.style.backgroundColor="green";
